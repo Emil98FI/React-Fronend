@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8081/getall')
+    fetch('https://restful-api-project1.herokuapp.com/getall')
       .then(res => res.json())
       .then((data) => {
         this.setState({ movies: data })
